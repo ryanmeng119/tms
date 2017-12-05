@@ -8,11 +8,5 @@ th {
 }
 
 body {
-    background-image: url(images/image.png);
-    background-repeat: no-repeat;
-    /*背景圖不要重複*/
-    background-position: 90% 90%;
-    /*放在 x 軸 90% y 軸 90% */
-    background-attachment: fixed;
-    /*背景固定*/
+    background-image: url(images/image.jpg);
 }

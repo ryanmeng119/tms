@@ -1,12 +1,86 @@
-th,
-td {
-    border: 1px solid black;
+* {
+    box-sizing: border-box;
 }
 
-th {
-    width: 100px;
+html {
+    width: 100vw;
+    height: 100vh;
 }
 
-body {
-    background-image: url(images/image.jpg);
+header {
+    position: fixed;
+    width: 100%;
+    height: 75px;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.15);
+    position: relative;
+}
+
+section::before {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/andrew-neel-308138.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    filter: blur(3px);
+}
+
+h1 {
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.877);
+    position: relative;
+    top: 30%;
+    /* font-family: 'Fredoka One', cursive; */
+    /* font-family: 'Squada One', cursive;
+    font-family: 'Arvo', serif;
+    font-family: 'Bungee', cursive; */
+}
+
+.container {
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container-btn {
+    position: relative;
+    top: 60%;
+}
+
+.btn {
+    display: inline-block;
+    width: 250px;
+    height: 50px;
+    border: 3px solid white;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.btn-group {
+    width: 100%;
+    height: 100%;
+    display: table;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.877);
+    letter-spacing: 5px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+a:hover {
+    background: rgba(255, 255, 255, 0.15);
 }
